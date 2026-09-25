@@ -2,7 +2,7 @@
 /*
   configuration.h - ESP3D configuration file
 
-  Copyright (c) 2014 Luc Lebosse. All rights reserved.
+  Copyright ( c ) 2014 Luc Lebosse. All rights reserved.
 
   This code is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
