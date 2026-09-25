@@ -2,7 +2,7 @@
 /*
   configuration.h - ESP3D configuration file
 
-  Copyright ( c ) 2014 Luc Lebosse. All rights reserved.
+  Copyright (c) 2014 Luc Lebosse. All rights reserved.
 
   This code is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -94,70 +94,6 @@
 // Use webserver
 // Enable http server
 #define HTTP_FEATURE 
-
-// Use telnet server
-// Enable telnet light (raw tcp) communications
-#define TELNET_FEATURE 
-
-// Enable notifications
-// Allows to send notifications to the user
-#define NOTIFICATION_FEATURE 
-
-// Notification message when online
-// The message that will be sent when the ESP is online
-#define NOTIFICATION_ESP_ONLINE "Hi, %ESP_NAME% is now online at %ESP_IP%"
-
-// Notification title message
-// The title of notification
-#define ESP_NOTIFICATION_TITLE "ESP3D Notification"
-
-/************************************
-*
-* Discovery methods of ESP3D
-*
-* The discovery methods of ESP3D
-*
-************************************/
-
-// Use captive portal 
-// Enable captive portal in AP mode
-#define CAPTIVE_PORTAL_FEATURE 
-
-// Use mDNS discovery
-// This method need `bonjour` protocol on windows, or `avahi` on linux
-#define MDNS_FEATURE 
-
-// Use Simple Service Discovery Protocol
-// It is supported on Windows out of the box
-#define SSDP_FEATURE 
-
-/************************************
-*
-* SSDP Customization settings
-*
-* Customize your ESP3D
-*
-************************************/
-
-// Model name
-// Modele name of device
-#define ESP_MODEL_NAME "Ortur Obsidian"
-
-// Model number
-// Modele number of device
-#define ESP_MODEL_NUMBER "ESP3D 3.0"
-
-// Model url
-// Modele url of device
-#define ESP_MODEL_URL "https://www.espressif.com/en/products/devkits"
-
-// Manufacturer name
-// Manufacturer name of device
-#define ESP_MANUFACTURER_NAME "Espressif Systems"
-
-// Manufacturer url
-// Manufacturer url of device
-#define ESP_MANUFACTURER_URL "https://www.espressif.com"
 
 /************************************
 *
@@ -357,14 +293,14 @@
     "ethernetspisckpin": "-1",
     "bluetooth": false,
     "http": true,
-    "telnet": true,
+    "telnet": false,
     "websocket": false,
-    "notifications": true,
+    "notifications": false,
     "notificationonline": "Hi, %ESP_NAME% is now online at %ESP_IP%",
     "notificationtitlemsg": "ESP3D Notification",
-    "captive": true,
-    "mdns": true,
-    "ssdp": true,
+    "captive": false,
+    "mdns": false,
+    "ssdp": false,
     "ssdpmodelename32": "ESP32",
     "ssdpmodelename8285": "ESP8285",
     "ssdpmodelename8266": "Ortur Obsidian",
